@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    margin-top: 20%;
+    }
+    #s{
+    color: black;
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    }
+    #h{
+    color: rgb(221, 208, 23);
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    }
+    #i{
+    color: rgb(66, 204, 24);
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    }
+    #v{
+    color: rgb(37, 157, 194);
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    }
+    #a{
+    color: rgb(170, 31, 31);
+    display: inline-block;
+    height: 30px;
+    width: 90px;
+    }
+    .d:hover{
+    background-color: bisque;
+    font-size: xx-large;
+    }
+    

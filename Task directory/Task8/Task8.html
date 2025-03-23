@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uppercase Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        input, textarea {
+            width: 300px;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        #output {
+            width: 300px;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>UPPERCASE TEXT CONVERTER</h2>
+    <div class="container">
+        <input type="text" id="inputField" placeholder="Enter text here" oninput="convertToUpperCase()">
+        <textarea id="output" placeholder="Output will be generated here..."></textarea>
+    </div>
+
+    <script>
+        function convertToUpperCase() {
+            const inputField = document.getElementById("inputField");
+            const outputField = document.getElementById("output");
+            outputField.value = inputField.value.toUpperCase();
+        }
+    </script>
+
+</body>
+</html>

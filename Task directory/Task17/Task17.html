@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Number Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #bbdefb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="container">
+    <h2>Random Number Generator</h2>
+    <input type="number" id="minInput" placeholder="Enter Minimum Value" />
+    <input type="number" id="maxInput" placeholder="Enter Maximum Value" />
+    <button onclick="generateRandomNumber()">Generate</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function generateRandomNumber() {
+      const min = parseInt(document.getElementById("minInput").value);
+      const max = parseInt(document.getElementById("maxInput").value);
+      const outputDiv = document.getElementById("result");
+
+      if (isNaN(min) || isNaN(max) || min > max) {
+        outputDiv.innerHTML = "⚠️ Please enter a valid range.";
+        return;
+      }
+
+      const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+      outputDiv.innerHTML = `Generated Number: ${randomNum}`;
+
+      
+      setTimeout(() => {
+        document.getElementById("container").innerHTML = "<h1 style='color: crimson;'>Vanished!!</h1>";
+      }, 4300);
+    }
+  </script>
+
+</body>
+</html>

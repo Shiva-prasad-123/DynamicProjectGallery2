@@ -1,0 +1,76 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #003566;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links li {
+  background-color: #ffffff;
+  color: #003566;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  background-color: #ffc300;
+  color: black;
+}
+
+/* Content Area */
+.content {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Iframe Styling */
+iframe#task-viewer {
+  width: 100%;
+  min-height: 600px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .nav-links {
+    justify-content: center;
+  }
+}

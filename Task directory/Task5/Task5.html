@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Calculator</title>
+  <link rel="stylesheet" href="Task5.css">
+</head>
+<body>
+  <div id="container">
+    <h2>Simple JS Calculator</h2>
+
+    <div class="input_div">
+      <input type="number" placeholder="Enter the value of X" id="num1" />
+      <input type="number" placeholder="Enter the value of Y" id="num2" />
+      <input type="text" placeholder="Result will appear here" id="res" disabled />
+    </div>
+
+    <div class="button_div">
+      <button onclick="add()">Addition (X + Y)</button>
+      <button onclick="subtract()">Subtraction (X - Y)</button>
+      <button onclick="multiply()">Multiplication (X * Y)</button>
+      <button onclick="divide()">Division (X / Y)</button>
+    </div>
+  </div>
+
+  <script src="Task5.js"></script>
+</body>
+</html>

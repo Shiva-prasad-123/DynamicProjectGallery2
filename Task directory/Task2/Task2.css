@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
+}
+#header{
+background-color: grey;
+border-radius: 25px;
+}
+p{
+background-color: aliceblue;
+text-align: justify;
+}
+button{
+width: 300 px;
+ height: 200 px;
+ padding-top: 2%;
+ padding-bottom: 2%;
+ border-radius: 15px;
+ font-size: 20px;
+}
+#btn{
+Margin-left: 35%;
+}

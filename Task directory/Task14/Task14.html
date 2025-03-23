@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Information</title>
+  <link rel="stylesheet" href="Task14.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Information Manager</h1>
+
+    <div class="input-section">
+      <input type="text" id="firstname" placeholder="Enter Firstname" />
+      <input type="text" id="lastname" placeholder="Enter Lastname" />
+      <input type="number" id="age" placeholder="Enter Age" />
+      <input type="text" id="college" placeholder="Enter College" />
+      <input type="text" id="semester" placeholder="Enter Semester" />
+      <input type="text" id="grade" placeholder="Enter Grade" />
+    </div>
+
+    <div class="button-section">
+      <button class="green" onclick="insertInfo()">Insert Info</button>
+      <button class="red" onclick="clearInputs()">Clear Inputs</button>
+      <button class="green" onclick="showAll()">Show All</button>
+      <button class="red" onclick="clearDisplay()">Clear Display</button>
+    </div>
+
+    <div class="search-section">
+      <input type="text" id="searchInput" placeholder="Search by Firstname" />
+      <button onclick="searchStudent()">Search</button>
+    </div>
+
+    <div id="display"></div>
+  </div>
+
+  <script src="Task14.js"></script>
+</body>
+</html>
